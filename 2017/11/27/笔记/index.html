@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Web API 第一天web API介绍什么是API？ API(Application Programming Interface,应用程序编程接口)，它是程序和开发人员自建基于某些硬件或者软件得以访问的一组例程的能力，不需要关注内部工作细节，不需要了解工作机制(源码);  比如  用锤子将钉子钉在墙上(锤子是工具) ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2017/11/27/笔记/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Web API 第一天web API介绍什么是API？ API(Application Programming Interface,应用程序编程接口)，它是程序和开发人员自建基于某些硬件或者软件得以访问的一组例程的能力，不需要关注内部工作细节，不需要了解工作机制(源码);  比如  用锤子将钉子钉在墙上(锤子是工具)    API就是工具  JS编程sort()排序方法 1234var arr =">
+<meta property="og:updated_time" content="2017-09-15T12:41:02.915Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="Web API 第一天web API介绍什么是API？ API(Application Programming Interface,应用程序编程接口)，它是程序和开发人员自建基于某些硬件或者软件得以访问的一组例程的能力，不需要关注内部工作细节，不需要了解工作机制(源码);  比如  用锤子将钉子钉在墙上(锤子是工具)    API就是工具  JS编程sort()排序方法 1234var arr =">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS-каналы"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Поиск"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/27/笔记/" class="article-date">
+  <time datetime="2017-11-27T07:45:50.815Z" itemprop="datePublished">2017-11-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Web-API-第一天"><a href="#Web-API-第一天" class="headerlink" title="Web API 第一天"></a>Web API 第一天</h1><h2 id="web-API介绍"><a href="#web-API介绍" class="headerlink" title="web API介绍"></a>web API介绍</h2><h3 id="什么是API？"><a href="#什么是API？" class="headerlink" title="什么是API？"></a>什么是API？</h3><ol>
+<li><p>API(Application Programming Interface,应用程序编程接口)，它是程序和开发人员自建基于某些硬件或者软件得以访问的一组例程的能力，不需要关注内部工作细节，不需要了解工作机制(源码);</p>
+<ol>
+<li><p>比如</p>
+<ol>
+<li><p>用锤子将钉子钉在墙上(锤子是工具)    API就是工具</p>
+</li>
+<li><p>JS编程sort()排序方法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">34</span>, <span class="number">12</span>, <span class="number">7</span>, <span class="number">9</span>];</span><br><span class="line">arr.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> b - a;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>浏览器内部组成 谷歌浏览器为例：</p>
+<ol>
+<li>渲染引擎(webkit)</li>
+<li>JS解析器(v8)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>API(指的是一大堆方法，不同的方法实现不同的功能)</p>
+</li>
+<li><p>我们可以简单理解API是封装好的函数</p>
+</li>
+<li><p>只有对象才可以挂在属性和方法</p>
+</li>
+</ol>
+</li>
+<li><p>特点：api有输入和输出的特点;</p>
+</li>
+</ol>
+<h3 id="什么是web-API？"><a href="#什么是web-API？" class="headerlink" title="什么是web API？"></a>什么是web API？</h3><ol>
+<li>浏览器提供的一些关于操作浏览器窗口以及页面中的元素的方法和属性</li>
+<li>webAPI我们学习两部分<ul>
+<li>DOM</li>
+<li>BOM</li>
+</ul>
+</li>
+</ol>
+<h2 id="JS组成"><a href="#JS组成" class="headerlink" title="JS组成"></a>JS组成</h2><ol>
+<li>ECMAscript提供一个js的基础语法核心</li>
+<li>DOM是文档提供一堆<strong>能够操作页面中的元素</strong>的API(工具或者方法和属性)<ol>
+<li>eg：单击一个按钮后做什么事情</li>
+</ol>
+</li>
+<li>BOM是浏览器提供的一堆<strong>能够实现控制浏览器的一些行为</strong>的API<ol>
+<li>eg：弹出一些浏览器的弹出框 alert()</li>
+<li>定时器</li>
+<li>地址栏跳转</li>
+<li>历史记录 刷新 关闭窗口</li>
+</ol>
+</li>
+</ol>
+<p>​</p>
+<h2 id="DOM简介"><a href="#DOM简介" class="headerlink" title="DOM简介"></a>DOM简介</h2><ol>
+<li><p>DOM document object model</p>
+</li>
+<li><p>文档：整个页面文档 document</p>
+</li>
+<li><p>模型：他是一个对于具体事物的一种抽象性描述</p>
+</li>
+<li><p>对象：我们将整个文档页面抽象成一个大的对象 document对象，既然是对象，就有很多api</p>
+</li>
+<li><p>节点：我们可以把文档页面中的所有标签以及注释，还有属性或者文本都可以堪称一个一个的节点</p>
+</li>
+<li><p>文档树：我们可以把页面中的所有的节点通过关系绘制出一个大概的结构，这个结构看起来像一棵树，所以我们将页面中的文档结构堪称文档树结构</p>
+</li>
+<li><p>元素：标签</p>
+</li>
+<li><p>属性</p>
+</li>
+</ol>
+<p>##DOM里面的一些获取元素的方法</p>
+<ol>
+<li>document.getElementById() 在整个文档页面中，通过元素的id名获取元素<ol>
+<li><strong>注意</strong> 这种方式可以获取id，但是<strong>在很多浏览器中也可以直接写id名在js中使用</strong>(只有id可以)，但是这个方式不推荐，最好统一使用获取的正规方式</li>
+<li>获取到的元素的类型，是</li>
+</ol>
+</li>
+<li>document.getElementsByTagName() 在整个文档下，通过元素的标签名获取元素<ol>
+<li>它获取的是一个html元素的集合列表，是一个类数组(伪数组)，它有数组的下标和length长度，但是没有数组的方法</li>
+<li>获取到的元素集合，是HTMLCollection</li>
+<li>这个方法有一个动态性特点：<ol>
+<li>当我们在页面元素生成之前去获取标签元素，它是空的，但是里面却存有多个元素，这些元素是程序后面执行完毕之后，动态往里面添加进去的</li>
+</ol>
+</li>
+<li>可以从具体的某个元素的里面获取元素.getElementsByTagName</li>
+</ol>
+</li>
+<li>document.getElementsByName()<ol>
+<li><strong>注意</strong> 它在有些浏览器中可以获取id名的元素，如果前面有相同的name名会发生覆盖</li>
+</ol>
+</li>
+<li>document.getElementsByClassName() 在文档下，通过类名获取页面中的元素<ol>
+<li><strong>注意</strong> 可以从具体的某个元素的里面获取元素.getElementsByClassName()</li>
+<li>有兼容性问题，IE8及一下的浏览器不支持<ol>
+<li>手动封装一个className的函数</li>
+<li>使用jQuery里面的获取类的方法</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>document.querySelector() 它获取的是对应的选择器选择到的元素，如果是多个，则只获取第一个</li>
+<li>document.querySelectorAll() 它获取的是对应的选择器选择到的所有的元素<ol>
+<li>获取的是一个集合列表，需要通过下标访问具体元素</li>
+<li><strong>注意</strong> querySelector()和querySelectorAll() 在IE7及以下不支持</li>
+</ol>
+</li>
+</ol>
+<h2 id="事件三要素"><a href="#事件三要素" class="headerlink" title="事件三要素"></a>事件三要素</h2><ol>
+<li>我们在做一些效果的时候，需要去观察和分析其中的事件<ol>
+<li>js这个语言，是以事件驱动为主的编程语言</li>
+<li>因为摸个事件发生，而导致一个结果</li>
+<li>了解几个常用的事件<ol>
+<li><strong>mouseover 鼠标移上事件</strong></li>
+<li><strong>mouseout 鼠标移出事件</strong></li>
+<li><strong>click 单击事件</strong></li>
+<li>contextmenu 右击事件</li>
+<li>mousemove 鼠标移动事件</li>
+<li>mousedown 鼠标按下</li>
+<li>mouseup 鼠标弹起事件</li>
+<li>keydown 键盘按下事件</li>
+<li>keyup 键盘弹起事件</li>
+<li>表单事件</li>
+<li>系统事件<ol>
+<li>自定义事件……2亲2    2·1    </li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>写效果的时候，要分析事件三要素<ol>
+<li>获取事件相关元素</li>
+<li>考虑事件类型</li>
+<li>绑定事件处理函数</li>
+</ol>
+</li>
+</ol>
+<p><strong>补充</strong> 事件处理函数，可以是匿名函数，也可以是有名函数</p>
+<h2 id="非表单元素的属性操作"><a href="#非表单元素的属性操作" class="headerlink" title="非表单元素的属性操作"></a>非表单元素的属性操作</h2><ol>
+<li>src href id title alt className(注意：不能直接使用class，class是保留字)</li>
+<li>案例：</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/11/27/笔记/" data-id="cjahw2xp90001nwwq43yan9e6" class="article-share-link">Поделиться</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/27/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Предыдущий</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Архив</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Недавние записи</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/11/27/笔记/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/11/27/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Создано с помощью <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
